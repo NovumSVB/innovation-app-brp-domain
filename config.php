@@ -1,5 +1,4 @@
 <?php
-use Core\Cfg;
 
 if(isset($_SERVER['IS_DEVEL']))
 {
@@ -26,6 +25,5 @@ else
 }
 
 $aConfig['CUSTOM_NAMESPACE'] = 'NovumBrp';
-
-Cfg::set($aConfig);
+return $aConfig;
 
